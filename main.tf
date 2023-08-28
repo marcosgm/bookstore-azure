@@ -8,7 +8,7 @@ resource "azurerm_resource_group" "rg" {
 }
 
 resource "random_string" "container_name" {
-  length  = 25
+  length  = 20
   lower   = true
   upper   = false
   special = false
