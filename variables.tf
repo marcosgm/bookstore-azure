@@ -56,10 +56,7 @@ variable "restart_policy" {
   }
 }
 
-variable "env_vars" {
-  type        = map
-  description = "Environment Variables for the container"
-  default     = {
-    bookstore_title="Azure bookstore"
-    }
+variable "bookstore_title" {
+  description = "Bookstore title"
+  type = string
 }

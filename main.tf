@@ -32,6 +32,8 @@ resource "azurerm_container_group" "container" {
       port     = var.port
       protocol = "TCP"
     }
-    environment_variables = var.env_vars
+    environment_variables = {
+      bookstore_title=var.bookstore_title
+    }
   }
 }
